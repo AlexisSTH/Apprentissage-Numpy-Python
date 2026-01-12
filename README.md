@@ -1,52 +1,95 @@
-Apprentissage de NumPy
-Ce dépôt contient mes notes et exercices d'apprentissage de la bibliothèque NumPy en Python.
-📚 Contenu
-1; Ipyhton & Jupyter base.ipynb
-Utilisation de Jupyter Notebook :
+# 📊 Apprentissage de NumPy
 
-Exécution de scripts externes avec %run
-Partage de variables entre scripts et notebook
+> Mes notes et exercices d'apprentissage de la bibliothèque NumPy en Python dans le cadre de mon parcours en Data Science.
+---
 
-2. Numpy_base.ipynb
-Introduction aux concepts de base de NumPy :
+## 🎯 À propos
 
-Création de scalaires, vecteurs et matrices avec np.array()
-Opérations élémentaires (addition, multiplication)
-Propriété .shape pour connaître les dimensions
-Opérations vectorielles élément par élément
+Ce dépôt regroupe mes notebooks Jupyter créés lors de mon apprentissage de **NumPy**, la bibliothèque fondamentale pour le calcul scientifique en Python. Vous y trouverez des concepts de base, des manipulations avancées et des exercices pratiques.
 
-3.  Manipuler les ndarray.ipynb
-Guide complet sur la manipulation des tableaux NumPy :
-- Indexing et Slicing
+---
 
-Index : Accéder aux éléments avec [] (0-indexing)
-Index négatifs : Accéder aux éléments depuis la fin avec -1, -2, etc.
-Slicing : Extraire des sous-tableaux avec [debut:fin:pas]
-Notation pour matrices : [ligne, colonne]
+## 📖 Contenu du dépôt
 
-- Assigner des valeurs
+### 1️⃣ **Ipyhton & Jupyter base.ipynb**
+Introduction à l'environnement Jupyter Notebook
 
-Modifier un élément : array[index] = valeur
-Modifier une ligne/colonne complète
-Affecter avec le slicing
+- ✅ Exécution de scripts externes avec `%run`
+- ✅ Partage de variables entre scripts et notebook
+- ✅ Gestion de l'espace de travail interactif
 
-:Addition 
-:Soustraction
-:Multiplication
+---
 
-3. Manipuler les ndarray (Exercices).ipynb
-Exercices pratiques pour s'entraîner sur :
+### 2️⃣ **Numpy_base.ipynb**
+Les fondamentaux de NumPy
 
-L'indexing avec des matrices complexes
-Le slicing avec différents pas
-L'assignation de valeurs
+- 🔢 Création de **scalaires, vecteurs et matrices** avec `np.array()`
+- ➕ Opérations élémentaires (addition, multiplication)
+- 📐 Propriété `.shape` pour connaître les dimensions
+- 🔄 Opérations vectorielles élément par élément
 
-🎯 Concepts clés appris
+---
 
-ndarray : Structure de données principale de NumPy
-Dimensions : Scalaire (0D), Vecteur (1D), Matrice (2D+)
-Slicing : [start:stop:step] où stop est exclu
-Broadcasting : Opérations entre tableaux de dimensions différentes
-Elementwise operations : Opérations élément par élément
+### 3️⃣ **Manipuler les ndarray.ipynb**
+Guide complet sur la manipulation des tableaux NumPy
 
-📖 Ressources : https://www.youtube.com/@foxxpy
+#### 🔍 **Indexing et Slicing**
+- **Index** : Accéder aux éléments avec `[]` (0-indexing)
+- **Index négatifs** : Accéder depuis la fin avec `-1`, `-2`, etc.
+- **Slicing** : Extraire des sous-tableaux avec `[debut:fin:pas]`
+- **Matrices** : Notation `[ligne, colonne]`
+
+#### ✏️ **Assigner des valeurs**
+- Modifier un élément : `array[index] = valeur`
+- Modifier une ligne/colonne complète
+- Affecter avec le slicing : `array[2:4] = nouvelle_valeur`
+
+#### 🧮 **Opérations élémentaires**
+- ➕ **Addition** : `array + 5` ou `array1 + array2`
+- ➖ **Soustraction** : `array1 - array2`
+- ✖️ **Multiplication** : `array * 3` ou `array1 * array2`
+
+---
+
+### 4️⃣ **Manipuler les ndarray (Exercices).ipynb**
+Mise en pratique des connaissances
+
+- 💪 Exercices sur l'indexing avec matrices complexes
+- 🎯 Slicing avec différents pas
+- 📝 Assignation de valeurs dans divers contextes
+
+---
+
+## 🎓 Concepts clés appris
+
+| Concept | Description |
+|---------|-------------|
+| **ndarray** | Structure de données principale de NumPy |
+| **Dimensions** | Scalaire (0D), Vecteur (1D), Matrice (2D+) |
+| **Slicing** | `[start:stop:step]` où `stop` est exclu |
+| **Broadcasting** | Opérations entre tableaux de dimensions différentes |
+| **Elementwise operations** | Opérations élément par élément |
+
+---
+
+## 💻 Exemples pratiques
+
+### Création et manipulation basique
+
+```python
+import numpy as np
+
+# Créer un tableau
+array = np.array([1, 2, 3, 4, 5])
+
+# Accéder aux éléments
+print(array[0])      # Premier élément : 1
+print(array[-1])     # Dernier élément : 5
+print(array[1:4])    # Slicing : [2 3 4]
+
+---
+📖 Ressources
+
+📺 Chaîne YouTube FoxxPy - Tutoriels suivis
+📚 Documentation officielle NumPy
+🐍 Python.org
