@@ -72,6 +72,14 @@ Mise en pratique des connaissances
 
 ---
 
+📖 Ressources
+
+📺 Chaîne YouTube FoxxPy - Tutoriels suivis
+📚 Documentation officielle NumPy
+🐍 Python.org
+
+---
+
 ## 💻 Exemples pratiques
 
 ### Création et manipulation basique
@@ -86,10 +94,3 @@ array = np.array([1, 2, 3, 4, 5])
 print(array[0])      # Premier élément : 1
 print(array[-1])     # Dernier élément : 5
 print(array[1:4])    # Slicing : [2 3 4]
-
----
-📖 Ressources
-
-📺 Chaîne YouTube FoxxPy - Tutoriels suivis
-📚 Documentation officielle NumPy
-🐍 Python.org
